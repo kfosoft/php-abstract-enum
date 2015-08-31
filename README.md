@@ -1,11 +1,26 @@
 # PHP Abstract Enum
+## Installation
+
+Installation with Composer
+
+Either run
+~~~
+    php composer.phar require --prefer-dist kfosoft/php-abstract-enum:"*"
+~~~
+or add in composer.json
+~~~
+    "require": {
+            ...
+            "kfosoft/php-abstract-enum":"*"
+    }
+~~~
 
 ## Example 
 ~~~
 <?php
 namespace app\enums;
 
-use ctur\base\Enum;
+use kfosoft\base\Enum;
 
 /**
  * @package app\enums
