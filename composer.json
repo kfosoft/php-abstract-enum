@@ -21,6 +21,6 @@
         "ext-json": "*"
     },
     "autoload": {
-        "psr-4": {"KFOSOFT\\": "src\\"}
+        "psr-4": {"KFOSOFT\\": "src/"}
     }
 }
