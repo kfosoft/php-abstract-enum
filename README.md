@@ -1,4 +1,4 @@
-# PHP Abstract Enum
+# PHP Abstract Enumeration
 ## Installation
 
 Installation with Composer
@@ -11,7 +11,7 @@ or add in composer.json
 ~~~
     "require": {
             ...
-            "kfosoft/php-abstract-enum":"*"
+            "kfosoft/php-abstract-enum": "*"
     }
 ~~~
 
@@ -20,27 +20,17 @@ or add in composer.json
 <?php
 namespace app\enums;
 
-use kfosoft\base\Enum;
+use KFOSOFT\Domain\Enumeration\AbstractEnumeration;
 
 /**
  * @package app\enums
  */
-class UserType extends Enum
+class UserType extends AbstractEnumeration
 {
-    const USER = '1';
-    const CLIENT = '2';
-    const ADMIN = '3';
-    const SUPER_ADMIN = '4';
-
-    /**
-     * @var array $list payment statuses.
-     */
-    protected static $list = [
-        self::USER        => 'User',
-        self::CLIENT      => 'Client',
-        self::ADMIN       => 'Admin',
-        self::SUPER_ADMIN => 'Super admin',
-    ];
+    const USER        = 1;
+    const CLIENT      = 2;
+    const ADMIN       = 3;
+    const SUPER_ADMIN = 4;
 }
 ~~~
 

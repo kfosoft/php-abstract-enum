@@ -1,25 +1,26 @@
 {
     "name": "kfosoft/php-abstract-enum",
-    "description": "PHP Abstract Enum",
+    "description": "PHP Abstract Enumeration",
     "keywords": [
         "php",
         "abstract",
-        "enum",
-        "php enum",
-        "php abstract enum",
-        "php base enum"
+        "enumeration",
+        "php enumeration",
+        "php abstract enumeration",
+        "php base enumeration"
     ],
     "type": "library",
     "authors": [
         {
-            "name": "Cyril Turkevich",
-            "email": "cyril.turkevich@gmail.com"
+            "name": "Kyrylo Checherskyi",
+            "email": "kyrylo.checherskyi@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=7.4.0",
+        "ext-json": "*"
     },
     "autoload": {
-        "psr-4": {"kfosoft\\": ""}
+        "psr-4": {"KFOSOFT\\": "src\\"}
     }
 }
