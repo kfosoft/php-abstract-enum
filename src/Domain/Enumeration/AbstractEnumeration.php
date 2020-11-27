@@ -242,6 +242,14 @@ abstract class AbstractEnumeration implements EnumerationInterface, Serializable
     /**
      * {@inheritdoc}
      */
+    public function jsonSerialize()
+    {
+        return $this->value;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function serialize()
     {
         return $this->value;
