@@ -12,11 +12,11 @@ interface EnumerationInterface
     public static function fromName(string $name);
 
     /**
-     * @param mixed $value
+     * @param string $value
      *
      * @return mixed
      */
-    public static function from($value);
+    public static function from(string $value);
 
     /**
      * @return mixed

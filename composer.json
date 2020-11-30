@@ -9,6 +9,7 @@
         "php abstract enumeration",
         "php base enumeration"
     ],
+    "license": "MIT",
     "type": "library",
     "authors": [
         {

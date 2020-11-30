@@ -91,6 +91,19 @@ abstract class AbstractEnumeration implements EnumerationInterface, Serializable
     }
 
     /**
+     * Create an enumeration object based on a value of const name.
+     *
+     * @param string $value
+     *
+     * @return static
+     * @throws ReflectionException
+     */
+    public static function from(string $value): self
+    {
+        return new static(self::getConstantName($value));
+    }
+
+    /**
      * @param $value
      *
      * @return bool
